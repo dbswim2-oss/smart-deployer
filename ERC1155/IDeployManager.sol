@@ -26,6 +26,12 @@ interface IDeployManager is IERC165{
     /// @dev Reverts if the transfer of funds to the owner fails
     error TransferFailed();
 
+    /// @dev Reverts if the contract is not a utility contract
+    error ContractIsNotUtilityContract();
+
+    /// @dev Reverts if the contract already registered 
+    error AlreadyRegistered();
+
     // ------------------------------------------------------------------------
     // Events
     // ------------------------------------------------------------------------
